@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>J Query</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+	
+</head>
+<body>
+
+	<!---Hide --> 
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("h1").click(function(){
+				$(this).hide();
+			})
+		})
+	</script>
+
+	<h1>Shahnawaz</h1>
+	<h1>Peerzade</h1>
+	<h1>9663303313</h1>
+
+
+	<!-- Mouse operation-->
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$("#demo").mouseenter(function(){
+				alert("Welcome to page !");
+			})
+		})
+	</script>	
+
+	<h1 id="demo">J Query</h1>
+
+
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$("#demo1").mouseleave(function(){
+				alert("Leave the page !");
+			
+			})
+		})
+	</script>	
+
+	<h1 id="demo1">J Query1</h1>
+
+
+	<!--Hover Function-->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#demo2").hover(function(){
+				alert("your entered my page!");
+
+			},
+			function(){
+				alert("get out from here!");
+
+
+			})
+		})
+		
+	</script>
+	<h1 id="demo2">Hover Function</h1>
+</body>
+</html>
